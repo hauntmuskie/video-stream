@@ -33,7 +33,7 @@ def ytsearch(query: str):
         songname = data["title"]
         url = data["link"]
         duration = data["duration"]
-        thumbnail = f"https://i.ytimg.com/vi/{data['id']}/sddefault.jpg"
+        thumbnail = f"https://i.ytimg.com/vi_webp/{data['id']}/maxresdefault.webp"
         return [songname, url, duration, thumbnail]
     except Exception as e:
         print(e)
